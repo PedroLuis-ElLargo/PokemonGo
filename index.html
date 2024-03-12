@@ -32,11 +32,21 @@
                 <li class="nav-item"><button class="btn btn-header steel" id="steel">Acero</button></li>
                 <li class="nav-item"><button class="btn btn-header fairy" id="fairy">Hada</button></li>
             </ul>
+            <div class="search-container">
+                <input type="text" id="pokemonInput" placeholder="Buscar Pokémon o ID">
+                <button class="btn-search" id="searchButton">Buscar</button>
+            </div>
         </nav>
     </header>
     <main>
-        
-        <div id="todos">
+        <!-- paginacion -->
+        <section class="pagination-controls">
+                <button class="btn-pagination" id="btn-prev">ANTERIOR</button>
+                <button class="btn-pagination" id="btn-next">SIGUIENTE</button>
+        </section>
+
+        <!-- contenedor de las tarjetas de los pokemones -->
+        <section id="todos">
             <div class="pokemon-todos" id="listaPokemon">
                 <!-- <div class="pokemon">
                     <div class="pokemon-img">
@@ -61,7 +71,7 @@
                     </div>
                 </div> -->
             </div>
-        </div>
+        </section>
     </main>
     </footer>
     <script src="js/app.js"></script>
